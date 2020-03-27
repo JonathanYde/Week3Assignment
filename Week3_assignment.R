@@ -41,7 +41,7 @@ m1
 
 solve(m1) #returns the inverse matrix of "m1"
 
-m1 %*% solve(m1) #returns the result of multiplying m1 with its inverse matrix
+m1 %*% solve(m1) #returns the result of multiplying "m1" with its inverse matrix
 
 
 ##### HERE I CREATE THE cacheSolve FUNCTION #####
@@ -64,8 +64,8 @@ test2$set(matrix( c(4, 2, 2,
                     2, 3, 1,
                     2, 1, 3), nrow=3, byrow=TRUE)) #creates the matrix "test2" similar to "m1"
 
-test4 <- test2$get()
+test3 <- test2$get() #stores the resulting matrix as "test3"
 
-test3 <- cacheSolve(test2)
+test4 <- cacheSolve(test2) #stores the inverse matrix as "test4"
 
-test4 %*% test3
+test3 %*% test4 #returns the result of multiplying "test3" with its inverse matrix "test4"
