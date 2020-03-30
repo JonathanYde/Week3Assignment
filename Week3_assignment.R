@@ -19,7 +19,7 @@ cachemean(test1) #returns the mean from the cache
 ##### HERE COMES MY ATTEMPT AT SOLVING THE ASSIGNMENT #####
 
 ##### FIRST I CREATE THE makeCacheMatrix FUNCTION #####
-makeCacheMatrix <- function(x = numeric()) {
+makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y) {
                 x <<- y
